@@ -6,10 +6,20 @@
 </head>
 <body>
   <h1>JavaScript Testing Page</h1>
-  <button type="submit" onclick="alert('wassup')">Submit</button>
-
-  <script>
-    document.write(document.bgcolor);
-  </script>
+  <p id="paragraph1">5
+  </p>
+  <p id="paragraph2">10</p>
+<button type="submit" onclick="alert(getElement())">submit</button>
+<script>
+function getElement() {
+var myPrompt = prompt("how many?");
+if( parseInt(myPrompt) > 10) {
+  document.bgColor = "blue";
+} else {
+  document.bgColor = "green";
+}
+return "completed";
+}
+</script>
 </body>
 </html>
